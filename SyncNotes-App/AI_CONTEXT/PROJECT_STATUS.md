@@ -31,6 +31,7 @@ Completed:
 - Advanced Android keyboard UX (KeyboardAwareScrollView)
 - Light verification (SDK 55, TS, CRUD flow)
 - Final QA (Navigation, Search edge cases, Data flow)
+- Optimistic UI implementation (Create, Update, Delete)
 
 In Progress:
 - None
@@ -47,12 +48,13 @@ Important Decisions:
 - Google Sheets backend
 - Auto spreadsheet creation
 - ARM64-v8a only builds
+- Optimistic UI updates
 
 Important Files:
-None
+- hooks/useNotes.ts (Optimistic logic)
 
 Known Blockers:
 None
 
 Last Updated:
-2026-05-10
+2026-05-12

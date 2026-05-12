@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-05-12
+### Added
+- Implemented Optimistic UI updates using TanStack Query best practices.
+- Instant feedback for Note Creation (prepended to list with temporary ID).
+- Instant feedback for Note Updates (real-time field synchronization).
+- Instant feedback for Note Deletion (immediate removal from UI).
+- Robust rollback mechanism for all operations using `onError` snapshots.
+- Automated refetching/synchronization after mutations using `onSettled`.
+
 ## 2026-05-10
 ### Changed
 - Refactored API configuration to use `EXPO_PUBLIC_API_URL` environment variable.
