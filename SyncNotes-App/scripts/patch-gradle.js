@@ -21,23 +21,11 @@ const splitConfig = `
     }
 `;
 
-const ndkConfig = `
-        ndk {
-            abiFilters += ["arm64-v8a"]
-        }
-`;
-
 let modified = false;
 
 // Add splits inside android {}
 if (!gradle.includes("splits {")) {
   gradle = gradle.replace(/android\s*\{/, `android {${splitConfig}`);
-  modified = true;
-}
-
-// Add ndk abiFilters inside defaultConfig {}
-if (!gradle.includes("arm64-v8a")) {
-  gradle = gradle.replace(/defaultConfig\s*\{/, `defaultConfig {${ndkConfig}`);
   modified = true;
 }
 
